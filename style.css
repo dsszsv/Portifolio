@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Press+Start+2P&display=swap');
 /*
 *{
     border: 1px solid red !important;
@@ -11,6 +11,7 @@ html{
 
 body{
     width: 900px;
+    height: 1250px;
     
 }
 
@@ -34,8 +35,62 @@ nav{
     gap: 1.2rem;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
+    
+}
+
+.sobre{
+    padding: 1rem;
+    display: flex;
+    margin-left: 15px;
+}
+
+.sobre img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgb(61, 61, 61);
+    margin: 1rem;
+}
+
+section h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    /*font-weight: 800;*/
+    padding: 0.5rem 0;
+}
+
+section p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8rem;
 }
 
 .menu li{
     list-style: none;
+    text-decoration: underline;
+}
+
+.skills{
+    padding: 1rem;
+}
+.skills h2{
+    margin-bottom: 1rem;
+}
+
+.skills i{
+    font-size: 3.8rem;
+    padding-right: 1.2rem;
+}
+
+#coracao{
+    color: dodgerblue;
+    font-size: 1.4rem;
+}
+
+footer{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
 }
