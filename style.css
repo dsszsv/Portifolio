@@ -11,7 +11,7 @@ html{
 
 body{
     max-width: 900px;
-    max-height: 1250px;
+    max-height: 100%;
     flex-grow: 1;
 }
 
@@ -20,9 +20,17 @@ nav{
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
+    background-color: black;
+    color:azure;
+    border-radius: 0px 0px 8px 8px;
+    height: 8rem;
 }
 
-#logo{
+#logo-container{
+    display: flex;
+}
+
+.logo{
     font-family: 'Press Start 2P', cursive;
     font-size: 1.4rem;
     padding-right: 1.8rem;
@@ -38,17 +46,24 @@ nav{
     flex-wrap: wrap;
 }
 
+.sobre-container{
+    align-items: flex-start;
+}
+
 .sobre{
     padding: 1rem;
     display: flex;
     margin-left: 15px;
+  /*  flex-wrap: wrap-reverse;
+*/
 }
 
 .sobre img{
-    width: 16rem;
-    height: 16rem;
+    object-fit: cover;
+    width: 35%;
+    height: 30%;
     border-radius: 8px;
-    box-shadow: 5px 5px 8px rgb(61, 61, 61);
+    box-shadow: 2px 2px 4px rgb(61, 61, 61);
     margin: 1rem;
 }
 
@@ -93,8 +108,27 @@ section p{
 
 footer{
     font-family: 'Press Start 2P', cursive;
-    font-size: 0.8rem;
+    font-size: 13%;
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: azure;
+    border-radius: 8px 8px 0px 0px;
+    padding: 1rem;
+}
+
+@media only screen and (max-width:750px){
+    .sobre{
+        flex-wrap: wrap-reverse;
+    }
+
+    .sobre img{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .da-silva{
+        display: none;
+     }
 }
