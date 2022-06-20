@@ -23,7 +23,7 @@ nav{
     background-color: black;
     color:azure;
     border-radius: 0px 0px 8px 8px;
-    height: 8rem;
+    height: 4rem;
 }
 
 #logo-container{
@@ -48,23 +48,24 @@ nav{
 
 .sobre-container{
     align-items: flex-start;
+    width: 50%;
 }
 
 .sobre{
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     display: flex;
     margin-left: 15px;
-  /*  flex-wrap: wrap-reverse;
-*/
+    justify-content: space-between;
+  
 }
 
 .sobre img{
     object-fit: cover;
-    width: 35%;
-    height: 30%;
+    width: 45%;
+    height: 40%;
     border-radius: 8px;
     box-shadow: 2px 2px 4px rgb(61, 61, 61);
-    margin: 1rem;
+    margin-left: 1rem;
 }
 
 section h2{
@@ -97,7 +98,7 @@ section p{
 }
 
 .skills i{
-    font-size: 3.8rem;
+    font-size: 282%;
     padding-right: 1.2rem;
 }
 
@@ -108,7 +109,7 @@ section p{
 
 footer{
     font-family: 'Press Start 2P', cursive;
-    font-size: 13%;
+    font-size: 73%;
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -118,9 +119,21 @@ footer{
     padding: 1rem;
 }
 
+@media only screen and (max-width:870px){
+    .da-silva{
+        display: none;
+     }
+
+}
+
 @media only screen and (max-width:750px){
     .sobre{
         flex-wrap: wrap-reverse;
+        
+    }
+
+    .sobre-container{
+        width: 90%;
     }
 
     .sobre img{
@@ -128,7 +141,8 @@ footer{
         margin-bottom: 1rem;
     }
 
-    .da-silva{
-        display: none;
+
+     nav{
+        height: 8rem;
      }
 }
