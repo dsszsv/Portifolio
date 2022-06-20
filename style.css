@@ -10,9 +10,9 @@ html{
 }
 
 body{
-    width: 900px;
-    height: 1250px;
-    
+    max-width: 900px;
+    max-height: 1250px;
+    flex-grow: 1;
 }
 
 nav{
@@ -35,7 +35,7 @@ nav{
     gap: 1.2rem;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
-    
+    flex-wrap: wrap;
 }
 
 .sobre{
@@ -68,6 +68,10 @@ section p{
 .menu li{
     list-style: none;
     text-decoration: underline;
+}
+
+.projetos{
+    padding: 1rem;
 }
 
 .skills{
