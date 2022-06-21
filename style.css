@@ -74,6 +74,7 @@ nav{
     margin-left: 1rem;
 }
 
+
 section h2{
     font-family: 'Press Start 2P', cursive;
     font-size: 1.2rem;
@@ -82,14 +83,51 @@ section h2{
     line-height: 2rem;
 }
 
+section h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    /*font-weight: 800;*/
+    padding: 0.5rem 0;
+    line-height: 1rem;
+    text-decoration: underline;    
+}
+
 section p{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 1rem;
     line-height: 1.8rem;
 }
 
+.titulo-projetos{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+
+.titulo-projetos span{
+    font-size: 1.8rem;
+}
+
 .projetos{
     padding: 1rem;
+}
+
+.projetos-container img{
+    object-fit: cover;
+    width: 65%;
+    height: 50%;
+    box-shadow: 2px 2px 5px gray;
+
+}
+
+.projetos-container p{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    margin: 0.5rem 0 0 0.5rem;
+}   
+
+.mostrar-projeto{
+    display: none;
 }
 
 .skills{

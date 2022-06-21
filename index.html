@@ -19,7 +19,7 @@
             <li>Sobre mim</li>
             <li>Projetos</li>
             <li>Skills</li>
-            <li>Contato</li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
         
     </nav>
@@ -33,18 +33,39 @@
                 <br><br>  
                 <p>Durante meu tempo livre, gosto de ler sobre tecnologia e atualidades, jogar jogos eletronicos e navegar por reddits interessantes. </p>
                 <br><br>    
-                <p>Fato curioso! Já fazem XXXXXXX segundos que estou programando!</p>
+                <p>Fato curioso! Já fazem <span id="time-container"></span> segundos que estou programando!</p>
                 <br><br>
             </div>
             <img src="resources/profile.jpg" alt="Douglas da Silva">
 
         </section>
         <section class="projetos">
-            <div class="projetos-container">
+            <div class="projetos-container">    
                 <h2>Projetos</h2>
-                
-                <h2>→ TeaCozy</h2>
-                <h2>→ Dasmoto's Arts & Crafts</h2>
+                    <div class="titulo-projetos">
+                        <span class="arrow">→</span>
+                        <h3>TeaCozy</h3>
+                    </div>
+                        <div class="mostrar-projeto">
+                            <img src="resources/TeaCozy.jpg" alt="Site da cafeteria TeaCozy">
+                            <p>Site da cafeteria TeaCozy, projeto elabora usando HTML e CSS</p>    
+                        </div>
+                    <div class="titulo-projetos">
+                        <span class="arrow">→</span>
+                        <h3>Dasmoto's Arts & Crafts</h3>
+                    </div>
+                        <div class="mostrar-projeto">
+                            <img src="resources/Dasmoto.jpg" alt="Site da loja de artigos para artes plasticas Dasmoto's">
+                            <p>Site da loja de artigos para artes plasticas Dasmoto's usando apenas HTML</p>    
+                        </div>  
+                    <div class="titulo-projetos">    
+                        <span class="arrow">→</span>
+                        <h3>HTML sheet</h3>
+                    </div>
+                        <div class="mostrar-projeto">
+                            <img src="resources/html_tags.jpg" alt="Sheet com tag's HTML traduzidas">
+                            <p>Sheet com tag's HTML traduzidas para o Português para facilitar o aprendizado</p>
+                        </div>
             </div>
         </section>
         <section class="skills">
@@ -61,5 +82,6 @@
     <footer>
         <p>Feito com <img id="coracao" src="resources/heart.png" alt="coração azul"> por Douglas da Silva</p>
     </footer>
+<script src="script.js"></script>  
 </body>
 </html>
